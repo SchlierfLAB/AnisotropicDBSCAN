@@ -29,7 +29,7 @@ After all parameters are set you can run the "Demo cell simulation" to create an
 
 ## Cluster the simulated data 
 
-First, you need to define the DBSCAN paramerters.
+First, you need to define the DBSCAN parameters.
 
 - **min_num_points**: Minimum number of points in DBSCAN
 
@@ -39,3 +39,6 @@ First, you need to define the DBSCAN paramerters.
 
 Finally, you can run the "Demo anisotropic clustering" and afterward the "Show cluster result" cells to perform the clustering and visualize the result. All points in the final plot are colored by the assigned cluster lable. 
  
+## Cluster your own data
+
+In the colab navigate to the "Analyze your own data" section. First, you have to run the initialization cell to import the required Python libraries and cluster functions. Afterward, you can upload your .csv file containing the x, y, and z coordinates of your data. Note that the file has to have column headers. Now you can copy the file path into the "set cluster parameters" cell (in the data section of colab to the left click on the three dots next to your file and click copy path after to get the file path). In the same box set the used separator if it is not "," and specify the column names for x, y, and z coordinates. Lastly, set the DBSCAN parameters to match your data. Now you can execute the following cells for clustering and visualization of your data. Please note that the custom DBSCAN function may run slow in google colab (depending on the datasize). 
